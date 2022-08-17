@@ -1,15 +1,30 @@
 import * as React from 'react';
-import { Factory } from './Factory';
+
+import { AttachmentData, ComponentType } from './components';
+import { ComponentsFactory } from './ComponentsFactory';
 import './style.css';
 
-const items = [
+const items: Array<AttachmentData> = [
+  // {
+  //   type: ItemType.ERROR,
+  //   error: 'The file you’re trying to upload is not an acceptable format',
+  //   key: 'validation'
+  // },
+  // {
+  //   type: ItemType.ATTACHMENT,
+  //   status: 'uploading',
+  //   filename: 'filename.jpg',
+  //   key: 'attachment'
+  // },
   {
-    type: 'attachment',
-    status: 'uploading',
+    type: ComponentType.ATTACHMENT,
+    status: 'uploaded',
+    filename: 'filename.jpg',
+    key: 'attachment',
   },
 ];
 
-const factory = new Factory();
+const factory = new ComponentsFactory();
 
 export default function App() {
   return (

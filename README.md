@@ -1,3 +1,5 @@
-# react-ts-3ossvj
+# react factory pattern
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-ts-3ossvj)
+Factory pattern for react component creation (without nasty **switch**).
+
+[Play on StackBlitz ⚡️](https://stackblitz.com/edit/react-factory-pattern)
