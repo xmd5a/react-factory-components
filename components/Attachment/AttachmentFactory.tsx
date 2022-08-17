@@ -2,7 +2,8 @@ import * as React from 'react';
 
 import { ConcreteComponentsFactory } from '../../ComponentsFactoryMapper';
 import { ComponentType } from '../types';
-import { Attachment, AttachmentProps } from './attachment';
+import { Attachment } from './Attachment';
+import { AttachmentProps } from './types';
 
 class AttachmentFactory implements ConcreteComponentsFactory<AttachmentProps> {
   get type() {

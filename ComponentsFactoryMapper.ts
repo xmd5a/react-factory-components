@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 
-import { AttachmentFactory } from './components';
+import { AttachmentFactory, ErrorFactory } from './components';
 
 interface ConcreteComponentsFactory<T> {
   type: string;
@@ -13,10 +13,10 @@ class FactoryComponentsMapper {
   constructor() {
     this.factories = {};
     const attachmentFactory = new AttachmentFactory();
-    // const validationFactory = new ValidationFactory();
+    const errorFactory = new ErrorFactory();
 
     this.factories[attachmentFactory.type] = attachmentFactory;
-    // this.factories[validationFactory.type] = validationFactory;
+    this.factories[errorFactory.type] = errorFactory;
   }
 }
 
